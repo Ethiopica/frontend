@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between; /* pushes logo left, nav right */
+  align-items: center; /* vertically centers them */
+  padding: 30px 40px;
+  background-color: rgb(3, 7, 47); /* optional, just for visibility */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

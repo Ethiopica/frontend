@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #root {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
@@ -16,19 +24,21 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-header,
-footer {
-  background-color: rgb(14, 88, 72);
-  display: block;
-  width: 100vw;
-}
-main {
-  height: 100vw;
-}
+
 .box {
-  background-color: rgb(100, 93, 83);
-  padding: 1rem;
+  background-color: rgb(232, 230, 239);
+  padding: 3rem;
   align-items: center;
+  display: inline-block;
+  flex-direction: row;
+  margin: 15px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.bookCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
 }
 
 @keyframes logo-spin {
